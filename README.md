@@ -1,25 +1,37 @@
 # Forecasting Operations Project
 
-## What Problem Does This Solve?
-Workforce and operations teams need forecast comparisons to understand volume and staffing pressure.
+> A synthetic contact-volume forecasting demo grounded in workforce operations.
 
-## Why It Matters For Business
-Forecasting links Juan's workforce/RTA background with Python-based time-series analysis.
+![Demo](assets/demo.svg)
+
+## Recruiter Snapshot
+
+| 30-second question | Answer |
+| --- | --- |
+| Problem | WFM teams need to compare forecast assumptions against actual demand so staffing conversations are based on evidence. |
+| My role | I created synthetic operations history, engineered calendar/event features, trained a RandomForestRegressor, and exported the holdout chart. |
+| Result | On the 28-day synthetic holdout, the model reports MAE 22.14 versus baseline MAE 35.43. |
+| Portfolio signal | Bridges operations forecasting intuition with Python modeling and honest metric reporting. |
+| Data policy | All records are synthetic and safe for a public portfolio. |
 
 ## What I Built
-A synthetic contact-volume forecast using baseline comparison, RandomForestRegressor, MAE, MAPE, and exported forecast chart.
 
-## Tools Used
-time series, pandas, scikit-learn, forecasting metrics, matplotlib
+- Calendar, weekend, event, and seasonality features.
+- Baseline comparison instead of a standalone model score.
+- Generated holdout CSV and forecast chart under `outputs/`.
 
-## Key Skills Demonstrated
-- Business problem framing.
-- Synthetic-data design for public portfolio use.
-- Reproducible Python workflow.
-- Clear documentation for recruiters and technical reviewers.
-- Privacy-safe storytelling: no employer, client, student, credential, medical, family, email, or real job-search data.
+## Evidence In This Repo
 
-## How To Run
+- `src/forecast_operations.py` trains and evaluates the model.
+- `data/sample_synthetic_data.csv` has 210 synthetic daily rows.
+- `assets/demo.svg` previews the holdout comparison.
+
+## Tools And Concepts
+
+`Python`, `pandas`, `scikit-learn`, `RandomForestRegressor`, `MAE`, `MAPE`, `matplotlib`
+
+## Run Locally
+
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
@@ -27,15 +39,16 @@ python -m pip install -r requirements.txt
 python src/forecast_operations.py
 ```
 
-## Screenshots Placeholder
-Add one screenshot here before publishing:
-- Suggested capture: Forecast holdout chart in outputs after running the script.
+## Limitations
 
-## What A Recruiter Should Notice
-Synthetic operations forecasting project with baseline comparison, MAE/MAPE metrics, and holdout visualization.
+This is a synthetic modeling exercise. The reported improvement is from generated data, not a business deployment.
 
-## What I Learned
-This project helped me practice turning an operations or AI-evaluation idea into a small, executable artifact with clean documentation, measurable output, and safe synthetic data.
+## Next Iteration
+
+- Add rolling-origin validation.
+- Add prediction intervals or scenario bands.
+- Add a short explanation of when the baseline is preferable.
 
 ## Data Privacy
-All sample data is synthetic. This repository must not include private data from Teleperformance, Foundever, UAO, clients, professors, classmates, emails, credentials, IDs, health records, family records, or real job-search records.
+
+Every record, identifier, organization, person, scenario, and result in this project is synthetic unless explicitly marked otherwise. No employer, client, university, colleague, customer, credential, private path, or sensitive personal record is used.

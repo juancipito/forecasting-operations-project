@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<rect width="1200" height="720" fill="#f8fafc"/>
+<text x="56" y="72" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="850" fill="#102a43">Forecasting Operations Project</text>
+<text x="56" y="108" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500" fill="#52606d">Synthetic contact-volume forecast connecting WFM context with Python modeling.</text>
+<rect x="56" y="142" width="250" height="108" rx="8" fill="#ffffff" stroke="#d9e2ec"/>
+<rect x="56" y="142" width="6" height="108" rx="3" fill="#2563eb"/>
+<text x="76" y="176" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#52606d">HISTORY ROWS</text>
+<text x="76" y="218" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800" fill="#102a43">210</text>
+<rect x="324" y="142" width="250" height="108" rx="8" fill="#ffffff" stroke="#d9e2ec"/>
+<rect x="324" y="142" width="6" height="108" rx="3" fill="#059669"/>
+<text x="344" y="176" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#52606d">HOLDOUT DAYS</text>
+<text x="344" y="218" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800" fill="#102a43">28</text>
+<rect x="592" y="142" width="250" height="108" rx="8" fill="#ffffff" stroke="#d9e2ec"/>
+<rect x="592" y="142" width="6" height="108" rx="3" fill="#d97706"/>
+<text x="612" y="176" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#52606d">MODEL MAE</text>
+<text x="612" y="218" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800" fill="#102a43">22.14</text>
+<rect x="860" y="142" width="250" height="108" rx="8" fill="#ffffff" stroke="#d9e2ec"/>
+<rect x="860" y="142" width="6" height="108" rx="3" fill="#7c3aed"/>
+<text x="880" y="176" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#52606d">BASELINE MAE</text>
+<text x="880" y="218" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="800" fill="#102a43">35.43</text>
+<rect x="56" y="286" width="520" height="360" rx="8" fill="#ffffff" stroke="#d9e2ec"/>
+<text x="76" y="318" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#102a43">Visual demo from synthetic data</text>
+<line x1="104" y1="606" x2="536" y2="606" stroke="#cbd5e1"/>
+<line x1="104" y1="344" x2="104" y2="606" stroke="#cbd5e1"/>
+<polyline points="104.0,494.3 137.2,540.1 170.5,604.6 203.7,560.2 236.9,385.5 270.2,344.0 303.4,497.2 336.6,500.1 369.8,481.4 403.1,547.3 436.3,560.2 469.5,427.0 502.8,451.4 536.0,590.3" fill="none" stroke="#2563eb" stroke-width="3"/>
+<circle cx="104" cy="622" r="5" fill="#2563eb"/>
+<text x="116" y="628" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#334e68">Actual</text>
+<polyline points="104.0,538.7 137.2,537.3 170.5,594.5 203.7,593.1 236.9,405.6 270.2,405.6 303.4,533.0 336.6,533.0 369.8,531.6 403.1,588.8 436.3,587.4 469.5,401.3 502.8,399.8 536.0,528.7" fill="none" stroke="#059669" stroke-width="3"/>
+<circle cx="236" cy="622" r="5" fill="#059669"/>
+<text x="248" y="628" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#334e68">Baseline</text>
+<polyline points="104.0,500.1 137.2,508.6 170.5,600.3 203.7,601.7 236.9,381.2 270.2,381.2 303.4,485.7 336.6,504.3 369.8,504.3 403.1,606.0 436.3,604.6 469.5,384.1 502.8,384.1 536.0,512.9" fill="none" stroke="#d97706" stroke-width="3"/>
+<circle cx="368" cy="622" r="5" fill="#d97706"/>
+<text x="380" y="628" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#334e68">Model</text>
+<rect x="616" y="286" width="528" height="360" rx="8" fill="#111827" stroke="#1f2937"/>
+<text x="636" y="320" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#d1fae5">Demo output</text>
+<text x="636" y="356" font-family="Cascadia Mono, Consolas, monospace" font-size="16" fill="#e5e7eb">python src/forecast_operations.py</text>
+<text x="636" y="381" font-family="Cascadia Mono, Consolas, monospace" font-size="16" fill="#e5e7eb">MAE improvement vs baseline: 13.29</text>
+<text x="636" y="406" font-family="Cascadia Mono, Consolas, monospace" font-size="16" fill="#e5e7eb">Model: RandomForestRegressor with calendar and event features.</text>
+<text x="636" y="431" font-family="Cascadia Mono, Consolas, monospace" font-size="16" fill="#e5e7eb">Forecast chart and holdout CSV are generated under outputs/.</text>
+<text x="56" y="686" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#52606d">README demo asset generated from repository code/data. Sample data is synthetic.</text>
+</svg>
